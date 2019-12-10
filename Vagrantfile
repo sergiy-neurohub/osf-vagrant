@@ -80,7 +80,7 @@ Vagrant.configure("2") do |config|
  config.vm.provision "shell", inline: <<-SHELL
     apt-get update 
     # apt-get install -y git
-    git clone https://github.com/CenterForOpenScience/osf.io.git
+    git clone https://github.com/sergiy-neurohub/osf.io.git
     cd osf.io
     echo fs.inotify.max_user_watches=131072 |  tee -a /etc/sysctl.conf
     sysctl -p   
