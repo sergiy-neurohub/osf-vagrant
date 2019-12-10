@@ -81,6 +81,7 @@ Vagrant.configure("2") do |config|
     apt-get update 
     # apt-get install -y git
     git clone https://github.com/sergiy-neurohub/osf.io.git
+    git checkout develop
     cd osf.io
     echo fs.inotify.max_user_watches=131072 |  tee -a /etc/sysctl.conf
     sysctl -p   
